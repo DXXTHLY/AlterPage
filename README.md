@@ -155,6 +155,7 @@ MIT License — see [LICENSE.md](LICENSE.md) for details
 Happy scripting! 🚀  
 Let your browser do more with AlterPage.
 
+````
 AlterPage/
 ├── background.js
 ├── manifest.js
@@ -165,3 +166,4 @@ AlterPage/
     ├── popup.css
     ├── popup.html
     └── popup.js
+````
