@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "AlterPage",
+    "version": "1.0",
+    "description": "Run custom scripts to tweak any website.",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "alterpage@dxxthly"
+      },
+      "opera": {
+        "id": "alterpage@dxxthly",
+        "compatibility": {
+          "minimum_opera_version": "90"
+        }
+      }
+    },
+    "permissions": [
+      "storage",
+      "scripting",
+      "activeTab",
+      "tabs",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  

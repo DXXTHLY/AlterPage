@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlterPage - Dev Mode</title>
+  <link rel="stylesheet" href="popup.css">
+  <!-- CodeMirror for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/ayu-light.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+  <div class="app-container">
+    <!-- Terminal-like Header -->
+    <header class="app-header">
+      <div class="terminal-bar">
+        <div class="terminal-controls">
+          <span class="control close"></span>
+          <span class="control minimize"></span>
+          <span class="control maximize"></span>
+        </div>
+        <div class="terminal-title">alterpage.js</div>
+        <div class="terminal-actions">
+          <button id="dev-tools-btn" class="btn btn-icon" title="Developer Tools">
+            <i class="fas fa-terminal"></i>
+          </button>
+          <label class="theme-switch btn-icon" title="Toggle Theme">
+            <input type="checkbox" id="theme-toggle" checked>
+            <span class="slider">
+              <i class="fas fa-sun day-icon"></i>
+              <i class="fas fa-moon night-icon"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+    
+<!-- Editor Section -->
+<section class="editor-section">
+  <div class="editor-toolbar">
+    <div class="editor-tabs">
+      <div class="tab active">script.js</div>
+      <div class="tab">metadata</div>
+    </div>
+    <button id="save-script" class="btn btn-run">
+      <i class="fas fa-play"></i> Run & Save
+    </button>
+  </div>
+  <div class="code-editor-container">
+    <textarea id="script-code" placeholder="
+    // ==UserScript==\n
+    // @name         My Awesome Script\n
+    // @namespace    http://your-namespace.com\n
+    // @version      1.0\n
+    // @description  What this script does\n
+    // @author       You\n
+    // @match        *://*.example.com/*\n
+    // ==/UserScript==\n\n(function() {\n
+          'use strict';\n    \n    
+          // Your code here\n    
+          console.log('AlterPage script loaded!');\n})();"></textarea>
+  </div>
+  <div class="editor-status">
+    <span id="line-count">1</span>:<span id="column-count">1</span>
+    <span class="editor-mode">JavaScript</span>
+    <span id="save-status" class="save-status">Unsaved changes</span>
+  </div>
+</section>
+
+
+    <!-- Script Console -->
+    <section class="console-section">
+      <div class="console-header">
+        <div class="console-title">
+          <i class="fas fa-terminal"></i> Script Console
+        </div>
+        <div class="console-actions">
+          <button class="btn btn-icon" id="clear-console" title="Clear Console">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <div id="console-output" class="console-output">
+        <div class="console-message info">AlterPage v1.0 initialized</div>
+        <div class="console-message">Ready to execute scripts</div>
+      </div>
+    </section>
+
+    <!-- Script Manager -->
+    <section class="scripts-section">
+      <div class="scripts-header">
+        <div class="scripts-title">
+          <i class="fas fa-folder-open"></i> Script Manager
+          <span id="scripts-count" class="badge">0</span>
+        </div>
+        <div class="scripts-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="scripts-search" placeholder="Filter scripts...">
+        </div>
+      </div>
+      <div id="saved-scripts" class="scripts-list">
+        <!-- Script cards will be inserted here -->
+      </div>
+    </section>
+
+    <!-- Edit Script Modal -->
+    <div id="edit-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <i class="fas fa-edit"></i> Edit Script
+          </div>
+          <button id="close-modal" class="btn btn-icon btn-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="code-editor-container">
+            <textarea id="edit-script-code"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="cancel-edit-btn" class="btn btn-secondary">
+            Cancel
+          </button>
+          <button id="save-edit-btn" class="btn btn-primary">
+            <i class="fas fa-save"></i> Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status Toast -->
+    <div id="status-toast" class="toast">
+      <div class="toast-icon"></div>
+      <div class="toast-message"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
