@@ -2,6 +2,9 @@
 
 ![icon16](https://github.com/user-attachments/assets/bea8396b-eea1-46ec-937c-e675dd482632)
 
+![image](https://github.com/user-attachments/assets/7f2b85b9-89fe-4ba6-86f0-9669a47cd307)
+
+
 
 A powerful browser extension that lets you inject and manage custom JavaScript scripts on any website, similar to Tampermonkey but with a streamlined interface.
 
