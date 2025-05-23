@@ -9,7 +9,7 @@ A powerful browser extension that lets you inject and manage custom JavaScript s
 
 ## Features ✨
 
-- **Easy Script Injection**: Quickly add scripts to modify web pages
+- **Easy Script Injection**: Quickly add scripts to modify web pages (perfect for testing)
 - **URL Pattern Matching**: Scripts only run on specified websites (`@match`)
 - **Dark/Light Mode**: Choose your preferred theme
 - **Script Management**: Enable/disable, edit, and organize your scripts
