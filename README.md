@@ -41,7 +41,7 @@ A powerful browser extension that lets you inject and manage custom JavaScript s
 
 ---
 
-## How to Use 🛠
+## How to Use 
 
 ### Creating a Script
 
