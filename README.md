@@ -29,7 +29,7 @@ A powerful browser extension that lets you inject and manage custom JavaScript s
 4. Enable **Developer mode** (toggle in top right)
 5. Click **Load unpacked** and select the extracted folder
 
-### Firefox
+### Firefox (working on getting it to work with FireFox) **coming soon**
 
 1. Download the `.xpi` file from [Releases](../../releases)
 2. Go to `about:addons`
