@@ -102,7 +102,7 @@ The `@match` directive supports these patterns:
 
 ---
 
-### Keyboard Shortcuts
+### Keyboard Shortcuts (THESE ARE KINDA BROKEN ATM)
 
 - `Ctrl+S` / `Cmd+S`: Save current script
 - `Ctrl+Enter`: Run current script
