@@ -130,15 +130,45 @@ The extension needs these permissions:
 
 Contributions welcome! Here's how:
 
-1. Fork the repository
-2. Create a feature branch  
-`git checkout -b feature/amazing-feature`
-3. Commit your changes  
-`git commit -m 'Add amazing feature`
-4. Push to the branch  
-`git push origin feature/amazing-feature`
-5. Open a Pull Request
+1. Fork the Repository
+Visit AlterPage GitHub Repo.
+- Click "Fork" (top-right) to create your copy.
 
+2. Clone Your Fork
+```bash
+git clone https://github.com/YOUR_USERNAME/AlterPage.git  `
+cd AlterPage
+```
+4. Create a Feature Branch
+```bash
+git checkout -b feature/your-feature-name
+```
+4. Make & Commit Changes
+```bash
+git add .  
+git commit -m "Add your awesome feature/fix"  
+```
+5. Push to GitHub
+```bash
+git push origin feature/your-feature-name  
+```
+6. Open a Pull Request (PR)
+Go to your fork on GitHub.
+Click "Compare & Pull Request".
+Describe your changes and submit.
+
+# Syncing Your Fork (Optional)
+To avoid conflicts with the main repo:
+
+```bash
+git remote add upstream https://github.com/DXXTHLY/AlterPage.git  
+git fetch upstream  
+git merge upstream/main
+```  
+# Notes
+Follow the project's code style (if defined).
+Keep PRs focused on a single change.
+Let me know if you'd like any modifications! 😊
 ---
 
 ## Support
