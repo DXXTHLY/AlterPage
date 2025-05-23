@@ -1,7 +1,7 @@
 # AlterPage
 
-![AlterPage Logo](![icon16](https://github.com/user-attachments/assets/a810a7b6-a8a9-402c-b217-91e838a4cf47)
-) 
+![icon16](https://github.com/user-attachments/assets/bea8396b-eea1-46ec-937c-e675dd482632)
+
 
 A powerful browser extension that lets you inject and manage custom JavaScript scripts on any website, similar to Tampermonkey but with a streamlined interface.
 
